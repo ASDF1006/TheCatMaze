@@ -1,0 +1,24 @@
+{% extends 'blog\base.html' %}
+{% load static %}
+
+{% block content %}
+
+<form method="POST">{% csrf_token %}
+Title : {{form.title}} <br> {{form.title.errors}} <br><br>
+
+Cat Image : {{form.cat_image}} <br> {{form.cat_image.errors}} <br><br>
+
+Story : {{form.story}} <br> {{form.story.errors}} <br><br>
+
+Riddle Image : {{form.riddle_image}} <br> {{form.riddle_image.errors}} <br><br>
+
+Riddle : {{form.riddle}} <br> {{form.riddle.errors}} <br><br>
+
+Answer : {{form.next_url}} <br> {{form.next_url.errors}} <br><br>
+
+Hint: {{form.hint}} <br> {{form.hint.errors}}<br><br>
+<br>
+<button type="submit">저장</button>
+</form>
+
+{% endblock %}

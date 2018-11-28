@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<article class="flexContainer">
+    <!-- title -->
+    <h1>Main</h1>
+
+    <form action="{% url 'riddle' answer='first' %}">
+      <button>Start</button>
+    </form>
+
+</article>
+
+{% endblock %}

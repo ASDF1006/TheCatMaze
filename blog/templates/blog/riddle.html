@@ -1,0 +1,54 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<article class="flexContainer">
+
+  <h1>{{ post.postProgress }}</h1>
+  
+  <div class="story flexContainer1">
+      <img class="img" src="{{ post.cat_image.url }}">
+  </div>
+
+  <article class="story flexContainer">
+    <br>
+    <p class="text">{{ post.story|linebreaksbr }}</p>
+    <br>
+    <br>
+
+    <img class="img" src="{{ post.riddle_image.url }}">
+  </article>
+
+  <hr>
+
+  <h1>{{ post.title }}</h1>
+
+  <br>
+  <br>
+  <p class="narration">{{ post.riddle|linebreaksbr }}</p>
+  <br>
+
+  <form method="POST">{% csrf_token %}
+    {{form}}
+  </form>
+
+  {% if post.hint != "" %}
+  <div class="container hint">
+    <div class="header hint">
+      <h1 class="hint">Hint</h1>
+    </div>
+    <!-- Item 1 -->
+    <div class="item hint">
+      <input class="hint" type="checkbox" id="box-1">
+      <label for="box-1" class="hint">HINT</label>
+      <div class="hint">
+        <p class="hint">{{ post.hint }}</p>
+      </div>
+    </div>
+      <!-- Item 2 -->
+  </div>
+  {% endif %}
+
+</article>
+
+{% endblock %}
