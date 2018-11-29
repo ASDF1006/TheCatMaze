@@ -6,18 +6,13 @@
 
   <h1>{{ post.postProgress }}</h1>
   
-  <div class="story flexContainer1">
-      <img class="img" src="{{ post.cat_image.url }}">
-  </div>
+  <div>
+    <img src="{{ post.cat_image.url }}">
 
-  <article class="story flexContainer">
-    <br>
     <p class="text">{{ post.story|linebreaksbr }}</p>
-    <br>
-    <br>
 
-    <img class="img" src="{{ post.riddle_image.url }}">
-  </article>
+    <img src="{{ post.riddle_image.url }}">
+  </div>
 
   <hr>
 
