@@ -7,10 +7,22 @@ from django.db import models, migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('blog', '0024_auto_20181128_2203'),
+        ('blog', '0001_initial'),
     ]
 
     operations = [
+        migrations.RemoveField(
+            model_name='post',
+            name='created_date',
+        ),
+        migrations.RemoveField(
+            model_name='post',
+            name='postProgress',
+        ),
+        migrations.RemoveField(
+            model_name='post',
+            name='published_date',
+        ),
         migrations.AlterField(
             model_name='post',
             name='cat_image',

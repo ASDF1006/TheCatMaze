@@ -3,6 +3,8 @@
 
 {% block content %}
 
+<article class="flexContainer">
+
 <form method="POST">{% csrf_token %}
 Title : {{form.title}} <br> {{form.title.errors}} <br><br>
 
@@ -21,4 +23,5 @@ Hint: {{form.hint}} <br> {{form.hint.errors}}<br><br>
 <button type="submit">저장</button>
 </form>
 
+</article>
 {% endblock %}

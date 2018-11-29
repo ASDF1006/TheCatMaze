@@ -10,6 +10,14 @@ body {
   padding-top: 72px;
 }
 
+html * {
+  -webkit-touch-callout: none;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+}
+
 /* Navigation Part */
 .navbar-inverse {
   background: black;
@@ -64,10 +72,4 @@ hr {
   font-style: italic;
   color: white;
   margin-top: 0px; 
-}
-
-form.answer input{
-  outline: none;
-  margin: 0 auto;
-  text-align: center;
 }

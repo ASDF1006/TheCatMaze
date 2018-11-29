@@ -5,22 +5,27 @@
 <article class="flexContainer">
 
   <article class="flexContatiner story">
-    <h1 class="title">{{ post.postProgress }}</h1>
+    <h1 class="title">{{ post.pk }}</h1>
   
+    {% if post.cat_image != "" %}
     <div class="flexContainer">
       <img src="{{ post.cat_image.url }}">
     </div>
+    {% endif %}
 
     <p class="text">{{ post.story|linebreaksbr }}</p>
 
+    {% if post.riddle_image != "" %}
     <div class="flexContainer">
       <img src="{{ post.riddle_image.url }}">
     </div>
+    {% endif %}
+
   </article>
 
   <hr>
 
-  <article class="flexContainer riddle">
+  <article class="riddle">
 
     <h1 class="title">{{ post.title }}</h1>
 
