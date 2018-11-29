@@ -10,55 +10,7 @@ body {
   padding-top: 72px;
 }
 
-/* body에 flex를 적용할 수 있다면 삭제 가능 */
-.flexContainer {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-hr {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* 본문 */
-h1 {
-  width: 100%;
-  text-align: center;
-  font-size: 3em;
-  color: #ff5c00;
-}
-
-.text {
-  width: 100%;
-  text-align: center;
-  font-size: 1.5em;
-  color: white;
-}
-
-.narration {
-  width: 100%;
-  text-align: center;
-  font-size: 1.5em;
-  font-style: italic;
-}
-
-form {
-  margin: 0 auto;
-}
-
-form input:focus {
-  outline: none;
-  text-align: center;
-}
-
-.jumbotron {
-  color: #2c3e50;
-  background: #ecf0f1;
-}
-
+/* Navigation Part */
 .navbar-inverse {
   background: black;
 }
@@ -73,4 +25,49 @@ form input:focus {
 
 .navbar-inverse .navbar-brand {
   color: white;
+}
+
+
+hr {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* body에 flex를 적용할 수 있다면 삭제 가능 */
+.flexContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 본문 */
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  color: #ff5c00;
+  margin: 0px auto 20px auto;
+}
+
+.text {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+}
+
+.narration {
+  width: 100%;
+  text-align: center;
+  font-size: 1.5em;
+  font-style: italic;
+  color: white;
+  margin-top: 0px; 
+}
+
+form.answer input{
+  outline: none;
+  margin: 0 auto;
+  text-align: center;
 }
